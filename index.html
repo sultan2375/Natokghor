@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>রঙ্গমঞ্চ | বাংলা নাটকের সুন্দর আধুনিক প্রদর্শনী</title>
+  <meta name="description" content="বাংলা নাটকের জন্য একটি আধুনিক, নান্দনিক ও মোবাইল-ফ্রেন্ডলি এক-পৃষ্ঠার ওয়েবসাইট। নাটকের তথ্য, ভিজ্যুয়াল গ্যালারি, প্রদর্শনী সূচি ও ব্যবহারবান্ধব নেভিগেশনসহ।">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    ::selection { background: rgba(251, 191, 36, .35); color: #fff; }
+    .noise:before{
+      content:""; position:absolute; inset:0; pointer-events:none; opacity:.12;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.16) 0 1px, transparent 1px),
+        radial-gradient(circle at 80% 30%, rgba(255,255,255,.12) 0 1px, transparent 1px),
+        radial-gradient(circle at 30% 80%, rgba(255,255,255,.10) 0 1px, transparent 1px),
+        radial-gradient(circle at 70% 70%, rgba(255,255,255,.14) 0 1px, transparent 1px);
+      background-size: 22px 22px;
+      mix-blend-mode: soft-light;
+    }
+    .mask-fade { mask-image: linear-gradient(180deg, black 78%, transparent 100%); -webkit-mask-image: linear-gradient(180deg, black 78%, transparent 100%); }
+    .glass { background: rgba(255,255,255,.08); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+    .text-shadow { text-shadow: 0 2px 20px rgba(0,0,0,.35); }
+  </style>
+</head>
+<body class="bg-[#0b0a0f] text-white antialiased selection:bg-amber-300 selection:text-black">
+  <header class="fixed top-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4">
+      <div class="glass noise rounded-2xl border border-white/10 shadow-[0_12px_50px_rgba(0,0,0,.35)]">
+        <div class="flex items-center justify-between px-4 py-3 md:px-6">
+          <a href="#home" class="flex items-center gap-3 group">
+            <div class="h-11 w-11 rounded-xl bg-[linear-gradient(135deg,#f8d36a,#d64d3f_45%,#6a1b54)] flex items-center justify-center shadow-lg shadow-amber-500/20">
+              <i data-lucide="drama" class="h-5 w-5 text-white"></i>
+            </div>
+            <div>
+              <div class="text-base md:text-lg font-semibold tracking-[0.2em] uppercase">রঙ্গমঞ্চ</div>
+              <div class="text-xs text-white/65">বাংলা নাটকের আধুনিক মঞ্চ</div>
+            </div>
+          </a>
+          <nav class="hidden md:flex items-center gap-7 text-sm text-white/80">
+            <a href="#about" class="hover:text-white transition">নাটক</a>
+            <a href="#schedule" class="hover:text-white transition">সূচি</a>
+            <a href="#gallery" class="hover:text-white transition">ভিজ্যুয়াল</a>
+            <a href="#cast" class="hover:text-white transition">দল</a>
+            <a href="#contact" class="hover:text-white transition">যোগাযোগ</a>
+          </nav>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-amber-300 text-black px-4 py-2 text-sm font-semibold hover:bg-amber-200 transition">
+            <i data-lucide="ticket" class="h-4 w-4"></i>
+            টিকিট/রেজিস্ট্রেশন
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="pt-28 md:pt-32">
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img data-ai="generate" data-slot="hero-stage" data-prompt="A cinematic modern Bengali theatre stage with warm spotlight beams, velvet curtains, subtle smoke, expressive empty stage, dramatic lighting, elegant cultural atmosphere, no text" data-ar="16:9" src="https://cdn.landing-page.io/ai-landingpage/html-generate/4559727d-30a8-4ce6-9b01-57811ed675b3/images/hero-stage-111f953ff1bc43c692fc8bce520a01af.png" class="h-full w-full object-cover opacity-35 mask-fade">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,203,107,.18),transparent_32%),linear-gradient(180deg,rgba(11,10,15,.2),rgba(11,10,15,.95))]"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+          <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 rounded-full border border-amber-300/30 bg-amber-300/10 px-4 py-2 text-amber-100 text-sm mb-6">
+              <span class="h-2 w-2 rounded-full bg-amber-300 animate-pulse"></span>
+              চলতি মৌসুম: আলো, আবেগ আর সংলাপের সন্ধ্যা
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-[1.02] tracking-tight text-shadow">
+              বাংলা নাটকের
+              <span class="block bg-[linear-gradient(90deg,#f8d36a,#ffd7a2_35%,#f7a1c4_72%,#ffd66f)] bg-clip-text text-transparent">
+                অনুভবময় মঞ্চ
+              </span>
+            </h1>
+            <p class="mt-6 text-base sm:text-lg text-white/78 leading-8 max-w-2xl">
+              এখানে নাটকের গল্প, চরিত্র, প্রদর্শনী সূচি, সৃজনশীল দল এবং মনকাড়া ভিজ্যুয়াল একসাথে উপস্থাপিত।
+              বাংলা ভাষার সৌন্দর্য ও আধুনিক ডিজাইনের সমন্বয়ে তৈরি একটি পরিপাটি, সহজ-ব্যবহারযোগ্য অভিজ্ঞতা।
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="#schedule" class="inline-flex items-center justify-center gap-2 rounded-full bg-white text-black px-6 py-3 font-semibold hover:bg-amber-200 transition">
+                <i data-lucide="calendar-days" class="h-4 w-4"></i>
+                প্রদর্শনী দেখুন
+              </a>
+              <a href="#about" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">
+                <i data-lucide="sparkles" class="h-4 w-4"></i>
+                নাটকের সারসংক্ষেপ
+              </a>
+            </div>
+
+            <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="text-2xl font-bold">১২+</div>
+                <div class="text-xs text-white/65 mt-1">শো-এর তালিকা</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="text-2xl font-bold">৩</div>
+                <div class="text-xs text-white/65 mt-1">মঞ্চ-অধ্যায়</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="text-2xl font-bold">১</div>
+                <div class="text-xs text-white/65 mt-1">এক-পৃষ্ঠার অভিজ্ঞতা</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="text-2xl font-bold">বাংলা</div>
+                <div class="text-xs text-white/65 mt-1">পূর্ণ ভাষা সমর্থন</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute-inset-4 rounded-[2rem] bg-[radial-gradient(circle,rgba(248,211,106,.25),transparent_55%)] blur-2xl"></div>
+            <div class="relative rounded-[2rem] border border-white/10 bg-[#12111a]/85 shadow-2xl overflow-hidden">
+              <img data-ai="generate" data-slot="hero-poster" data-prompt="An elegant Bengali theatre poster composition with a graceful performer silhouette, warm red and gold lighting, stage curtains, dramatic shadows, cinematic editorial style, no text" data-ar="4:3" src="https://cdn.landing-page.io/ai-landingpage/html-generate/4559727d-30a8-4ce6-9b01-57811ed675b3/images/hero-poster-7bc895db1d1d4c2293575c02f33d411a.png" class="w-full h-[420px] object-cover">
+              <div class="p-6 border-t border-white/10">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <div class="text-xs uppercase tracking-[0.35em] text-amber-200/70">আজকের বিশেষ</div>
+                    <h2 class="mt-2 text-2xl font-bold">“ছায়ার ভিতর আলো”</h2>
+                    <p class="mt-2 text-sm text-white/70 leading-6">একটি আবেগঘন নাট্যরচনা যেখানে স্মৃতি, সম্পর্ক ও আত্মপরিচয়ের সূক্ষ্ম টানাপোড়েন ফুটে ওঠে।</p>
+                  </div>
+                  <div class="rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-right">
+                    <div class="text-xs text-white/60">স্থিতিকাল</div>
+                    <div class="text-lg font-bold">১ ঘ ৪৫ মি</div>
+                  </div>
+                </div>
+                <div class="mt-5 grid grid-cols-3 gap-3 text-sm">
+                  <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+                    <div class="text-white/55 text-xs">ভাষা</div>
+                    <div class="font-semibold mt-1">বাংলা</div>
+                  </div>
+                  <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+                    <div class="text-white/55 text-xs">ধরন</div>
+                    <div class="font-semibold mt-1">সমকালীন</div>
+                  </div>
+                  <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+                    <div class="text-white/55 text-xs">উপযুক্ত</div>
+                    <div class="font-semibold mt-1">সবাই</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 md:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-[.95fr_1.05fr] gap-10 items-start">
+          <div>
+            <div class="text-sm uppercase tracking-[0.32em] text-amber-200/70">নাটক সম্পর্কে</div>
+            <h2 class="mt-3 text-3xl md:text-5xl font-black leading-tight">সংলাপ, নীরবতা, এবং মঞ্চের আলোর ভেতর এক বাংলা গল্প</h2>
+            <p class="mt-5 text-white/72 leading-8">
+              এই পৃষ্ঠাটি বাংলা নাটকের পরিবেশনা, সৃজনশীল পরিচিতি, এবং দর্শকদের জন্য সহজে খুঁজে পাওয়ার মতো তথ্য একত্র করেছে।
+              পরিষ্কার টাইপোগ্রাফি, উজ্জ্বল ভিজ্যুয়াল, ও দ্রুত নেভিগেশনের মাধ্যমে নাটকের অভিজ্ঞতাকে আরও প্রাণবন্ত করা হয়েছে।
+            </p>
+            <div class="mt-6 space-y-4">
+              <div class="flex gap-4">
+                <div class="mt-1 h-10 w-10 rounded-xl bg-amber-300 text-black flex items-center justify-center shrink-0"><i data-lucide="palette" class="h-5 w-5"></i></div>
+                <div>
+                  <h3 class="font-semibold">দৃশ্যের নকশা</h3>
+                  <p class="text-sm text-white/65 mt-1">নরম আলো, কনট্রাস্ট, এবং মঞ্চ-অনুপ্রাণিত রঙপ্যালেট।</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="mt-1 h-10 w-10 rounded-xl bg-emerald-300 text-black flex items-center justify-center shrink-0"><i data-lucide="accessibility" class="h-5 w-5"></i></div>
+                <div>
+                  <h3 class="font-semibold">সহজ ব্যবহার</h3>
+                  <p class="text-sm text-white/65 mt-1">মোবাইল, ট্যাবলেট ও ডেস্কটপে সমানভাবে স্বাচ্ছন্দ্যদায়ক।</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="mt-1 h-10 w-10 rounded-xl bg-fuchsia-300 text-black flex items-center justify-center shrink-0"><i data-lucide="wand-sparkles" class="h-5 w-5"></i></div>
+                <div>
+                  <h3 class="font-semibold">সৃজনশীল উপস্থাপনা</h3>
+                  <p class="text-sm text-white/65 mt-1">বড় ভিজ্যুয়াল, তথ্যকার্ড, ও সূচিবদ্ধ উপস্থাপনা।</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="rounded-[1.8rem] border border-white/10 bg-white/5 p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold text-lg">নাটকের সারমর্ম</h3>
+                <i data-lucide="book-open-text" class="h-5 w-5 text-amber-200"></i>
+              </div>
+              <p class="mt-4 text-sm leading-7 text-white/70">
+                নগরজীবনের ভিড়, পারিবারিক দূরত্ব, এবং শিল্পের প্রতি আস্থাকে কেন্দ্র করে নাটকটি এক অন্তর্মুখী যাত্রা।
+                প্রতিটি দৃশ্য দর্শককে স্মৃতি ও বর্তমানের সীমানা অতিক্রম করতে আহ্বান জানায়।
+              </p>
+            </div>
+            <div class="rounded-[1.8rem] border border-white/10 bg-white/5 p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold text-lg">মঞ্চভাষা</h3>
+                <i data-lucide="mic" class="h-5 w-5 text-amber-200"></i>
+              </div>
+              <p class="mt-4 text-sm leading-7 text-white/70">
+                সংলাপের ভাঁজে ভাঁজে কবিতা, আলো-অন্ধকারের খেলায় প্রতীকী ইঙ্গিত, এবং সুরের নরম ব্যবহার।
+              </p>
+            </div>
+            <div class="sm:col-span-2 rounded-[1.8rem] border border-white/10 bg-[linear-gradient(135deg,rgba(248,211,106,.14),rgba(214,77,63,.12),rgba(255,255,255,.04))] p-6">
+              <div class="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <h3 class="font-semibold text-lg">দর্শক অভিজ্ঞতা</h3>
+                  <p class="mt-2 text-sm text-white/72 max-w-xl">এক নজরে সময়, আসন, দল ও যোগাযোগ—সবকিছু দ্রুত পাওয়ার সুবিধা।</p>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                  <span class="rounded-full bg-white/10 px-3 py-1">ইভেন্ট</span>
+                  <span class="rounded-full bg-white/10 px-3 py-1">শিল্প</span>
+                  <span class="rounded-full bg-white/10 px-3 py-1">সংস্কৃতি</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="py-20 md:py-28 bg-white/[0.03] border-y border-white/10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+          <div>
+            <div class="text-sm uppercase tracking-[0.32em] text-amber-200/70">প্রদর্শনী সূচি</div>
+            <h2 class="mt-3 text-3xl md:text-5xl font-black">কবে, কোথায়, কীভাবে দেখবেন</h2>
+          </div>
+          <p class="text-white/65 max-w-2xl">নিচের সময়সূচি উদাহরণ হিসেবে সাজানো হয়েছে—দর্শকরা খুব সহজে তারিখ, স্থান এবং পরবর্তী শো সম্পর্কে ধারণা পাবেন।</p>
+        </div>
+
+        <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-6">
+          <div class="space-y-4">
+            <article class="rounded-[1.8rem] border border-white/10 bg-[#14121c] p-5 md:p-6 flex flex-col sm:flex-row gap-5 sm:items-center justify-between">
+              <div class="flex items-center gap-4">
+                <div class="h-16 w-16 rounded-2xl bg-amber-300 text-black flex items-center justify-center shrink-0">
+                  <i data-lucide="sun-medium" class="h-8 w-8"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">মাতৃভাষার মঞ্চ</h3>
+                  <p class="text-white/65 mt-1">শুক্রবার • সন্ধ্যা ৭:৩০ • প্রেক্ষাগৃহ-১</p>
+                </div>
+              </div>
+              <div class="text-sm text-white/75 sm:text-right">
+                <div class="font-semibold text-white">অন্তরঙ্গ পারিবারিক নাট্যরূপ</div>
+                <div class="mt-1">আসন সীমিত • আগাম বুকিং বাঞ্ছনীয়</div>
+              </div>
+            </article>
+
+            <article class="rounded-[1.8rem] border border-white/10 bg-[#14121c] p-5 md:p-6 flex flex-col sm:flex-row gap-5 sm:items-center justify-between">
+              <div class="flex items-center gap-4">
+                <div class="h-16 w-16 rounded-2xl bg-fuchsia-300 text-black flex items-center justify-center shrink-0">
+                  <i data-lucide="moon-star" class="h-8 w-8"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">নীরবতার শব্দ</h3>
+                  <p class="text-white/65 mt-1">শনিবার • সন্ধ্যা ৮:০০ • ব্ল্যাক বক্স থিয়েটার</p>
+                </div>
+              </div>
+              <div class="text-sm text-white/75 sm:text-right">
+                <div class="font-semibold text-white">সমসাময়িক, প্রতীকী পরিবেশনা</div>
+                <div class="mt-1">দর্শক-সংশ্লিষ্ট পোস্ট-শো আলোচনা</div>
+              </div>
+            </article>
+
+            <article class="rounded-[1.8rem] border border-white/10 bg-[#14121c] p-5 md:p-6 flex flex-col sm:flex-row gap-5 sm:items-center justify-between">
+              <div class="flex items-center gap-4">
+                <div class="h-16 w-16 rounded-2xl bg-emerald-300 text-black flex items-center justify-center shrink-0">
+                  <i data-lucide="stars" class="h-8 w-8"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">অন্তর্লোক</h3>
+                  <p class="text-white/65 mt-1">রবিবার • বিকাল ৫:০০ • ওপেন-স্টেজ</p>
+                </div>
+              </div>
+              <div class="text-sm text-white/75 sm:text-right">
+                <div class="font-semibold text-white">পরিবারসহ উপভোগযোগ্য পরিবেশনা</div>
+                <div class="mt-1">ছাত্রছাত্রীদের জন্য বিশেষ প্রবেশ</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03))] p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-bold">দ্রুত তথ্য</h3>
+              <i data-lucide="info" class="h-5 w-5 text-amber-200"></i>
+            </div>
+            <div class="mt-6 space-y-4">
+              <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+                <div class="text-sm text-white/60">দৈর্ঘ্য</div>
+                <div class="mt-1 font-semibold">প্রায় ১০৫ মিনিট</div>
+              </div>
+              <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+                <div class="text-sm text-white/60">ভাষা</div>
+                <div class="mt-1 font-semibold">শুদ্ধ বাংলা, সহজ উপভাষা</div>
+              </div>
+              <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+                <div class="text-sm text-white/60">দর্শক</div>
+                <div class="mt-1 font-semibold">সব বয়সের দর্শকের জন্য</div>
+              </div>
+              <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+                <div class="text-sm text-white/60">সহযোগিতা</div>
+                <div class="mt-1 font-semibold">ক্লাব, স্কুল, ও সাংস্কৃতিক দল</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="py-20 md:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <div class="text-sm uppercase tracking-[0.32em] text-amber-200/70">ভিজ্যুয়াল গ্যালারি</div>
+          <h2 class="mt-3 text-3xl md:text-5xl font-black">মঞ্চের আবহ, চরিত্রের দ্যুতি, আর আলোর গল্প</h2>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-4">
+          <figure class="md:col-span-7 rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 relative group">
+            <img data-ai="generate" data-slot="gallery-1" data-prompt="A close cinematic scene from a Bengali drama rehearsal, two actors under amber stage lighting with expressive body language, velvet curtains, artistic and emotional atmosphere, no text" data-ar="16:9" src="https://cdn.landing-page.io/ai-landingpage/html-generate/4559727d-30a8-4ce6-9b01-57811ed675b3/images/gallery-1-cef5aae2dc6848d6931fbaf63f5f8a59.png" class="h-full w-full object-cover group-hover:scale-[1.03] transition duration-700">
+            <figcaption class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/85 to-transparent">
+              <div class="text-xs uppercase tracking-[0.28em] text-amber-200/75">দৃশ্য ০১</div>
+              <div class="mt-2 text-xl font-bold">অনুশীলনের তীব্রতা</div>
+            </figcaption>
+          </figure>
+
+          <figure class="md:col-span-5 rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 relative group">
+            <img data-ai="generate" data-slot="gallery-2" data-prompt="An elegant Bengali stage set design with geometric props, warm red and gold lights, contemporary theatre mood, polished and minimal, no text" data-ar="4:3" src="https://cdn.landing-page.io/ai-landingpage/html-generate/4559727d-30a8-4ce6-9b01-57811ed675b3/images/gallery-2-123c1bb3529941388390f1f7d6ac5de6.png" class="h-full w-full object-cover group-hover:scale-[1.03] transition duration-700">
+            <figcaption class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/85 to-transparent">
+              <div class="text-xs uppercase tracking-[0.28em] text-amber-200/75">দৃশ্য ০২</div>
+              <div class="mt-2 text-xl font-bold">মঞ্চসজ্জার ছন্দ</div>
+            </figcaption>
+          </figure>
+
+          <figure class="md:col-span-5 rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 relative group">
+            <img data-ai="generate" data-slot="gallery-3" data-prompt="A dramatic theatrical close-up of an actor in Bengali theatre makeup, intense eyes, soft shadow, warm cinematic glow, no text" data-ar="4:3" src="https://cdn.landing-page.io/ai-landingpage/html-generate/4559727d-30a8-4ce6-9b01-57811ed675b3/images/gallery-3-86af2674080f419fa3310c8509e0f7c7.png" class="h-full w-full object-cover group-hover:scale-[1.03] transition duration-700">
+            <figcaption class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/85 to-transparent">
+              <div class="text-xs uppercase tracking-[0.28em] text-amber-200/75">দৃশ্য ০৩</div>
+              <div class="mt-2 text-xl font-bold">অভিনয়ের নিকটতা</div>
+            </figcaption>
+          </figure>
+
+          <figure class="md:col-span-7 rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 relative group">
+            <img data-ai="generate" data-slot="gallery-4" data-prompt="A refined audience hall inside a contemporary Bengali theatre with glowing stage lights, rows of seats, elegant cultural ambiance, no text" data-ar="16:9" src="https://cdn.landing-page.io/ai-landingpage/html-generate/4559727d-30a8-4ce6-9b01-57811ed675b3/images/gallery-4-cb044478ea814f5c97c4a4ce157aa1f3.png" class="h-full w-full object-cover group-hover:scale-[1.03] transition duration-700">
+            <figcaption class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/85 to-transparent">
+              <div class="text-xs uppercase tracking-[0.28em] text-amber-200/75">দৃশ্য ০৪</div>
+              <div class="mt-2 text-xl font-bold">দর্শক ও মঞ্চের সংযোগ</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="cast" class="py-20 md:py-28 bg-white/[0.03] border-y border-white/10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-[.85fr_1.15fr] gap-10 items-start">
+          <div>
+            <div class="text-sm uppercase tracking-[0.32em] text-amber-200/70">সৃজনশীল দল</div>
+            <h2 class="mt-3 text-3xl md:text-5xl font-black">অভিনয়, নির্দেশনা, সঙ্গীত ও দৃশ্যের সমন্বয়</h2>
+            <p class="mt-5 text-white/70 leading-8">সুশৃঙ্খল দলবিন্যাস নাটককে আরও প্রাণবন্ত করে। এখানে প্রধান সদস্যদের পরিচিতি সুন্দরভাবে উপস্থাপন করা হয়েছে।</p>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="rounded-[1.8rem] border border-white/10 bg-[#14121c] p-6">
+              <div class="flex items-center gap-4">
+                <div class="h-14 w-14 rounded-2xl bg-amber-300/15 border border-amber-200/25 flex items-center justify-center">
+                  <i data-lucide="crown" class="h-6 w-6 text-amber-200"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">পরিচালক</h3>
+                  <p class="text-sm text-white/65">দৃশ্যভাষা ও ছন্দের নেতৃত্ব</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[1.8rem] border border-white/10 bg-[#14121c] p-6">
+              <div class="flex items-center gap-4">
+                <div class="h-14 w-14 rounded-2xl bg-fuchsia-300/15 border border-fuchsia-200/25 flex items-center justify-center">
+                  <i data-lucide="users" class="h-6 w-6 text-fuchsia-200"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">অভিনেতৃবৃন্দ</h3>
+                  <p class="text-sm text-white/65">চরিত্রের আবেগকে জীবন্ত করা</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[1.8rem] border border-white/10 bg-[#14121c] p-6">
+              <div class="flex items-center gap-4">
+                <div class="h-14 w-14 rounded-2xl bg-emerald-300/15 border border-emerald-200/25 flex items-center justify-center">
+                  <i data-lucide="music-4" class="h-6 w-6 text-emerald-200"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">সাউন্ড ডিজাইন</h3>
+                  <p class="text-sm text-white/65">সংলাপের ভাঁজে সুরের পরিপূরকতা</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[1.8rem] border border-white/10 bg-[#14121c] p-6">
+              <div class="flex items-center gap-4">
+                <div class="h-14 w-14 rounded-2xl bg-cyan-300/15 border border-cyan-200/25 flex items-center justify-center">
+                  <i data-lucide="lamp-ceiling" class="h-6 w-6 text-cyan-200"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">আলো ও দৃশ্য</h3>
+                  <p class="text-sm text-white/65">মঞ্চের আবেগকে উজ্জ্বল করা</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 md:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-[.95fr_1.05fr] gap-8 items-stretch">
+          <div class="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(248,211,106,.12),rgba(255,255,255,.04),rgba(214,77,63,.10))] p-6 md:p-8">
+            <div class="text-sm uppercase tracking-[0.32em] text-amber-200/70">যোগাযোগ</div>
+            <h2 class="mt-3 text-3xl md:text-5xl font-black">দেখার পরিকল্পনা করুন</h2>
+            <p class="mt-5 text-white/72 leading-8">টিকিট, দলীয় বুকিং, বা অনুষ্ঠান সম্পর্কে জানতে নিচের ফর্মটি পূরণ করুন। আপনার তথ্য সংগ্রহ করা হবে, তবে অভিজ্ঞতাটি বাধাগ্রস্ত হবে না।</p>
+            <div class="mt-8 space-y-4 text-sm text-white/75">
+              <div class="flex items-center gap-3"><i data-lucide="map-pin" class="h-4 w-4 text-amber-200"></i>নগরীর প্রধান সাংস্কৃতিক কেন্দ্রে</div>
+              <div class="flex items-center gap-3"><i data-lucide="phone" class="h-4 w-4 text-amber-200"></i>+৮৮০ ১০০০ ০০০০০০</div>
+              <div class="flex items-center gap-3"><i data-lucide="mail" class="h-4 w-4 text-amber-200"></i>hello@rongomoncho.example</div>
+            </div>
+          </div>
+
+          <form id="leadForm" class="rounded-[2rem] border border-white/10 bg-[#14121c] p-6 md:p-8 space-y-5">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="block">
+                <span class="text-sm text-white/70">নাম</span>
+                <input name="name" type="text" placeholder="আপনার নাম" class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none focus:border-amber-300/60 focus:ring-2 focus:ring-amber-300/20">
+              </label>
+              <label class="block">
+                <span class="text-sm text-white/70">ফোন</span>
+                <input name="phone" type="tel" placeholder="মোবাইল নম্বর" class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none focus:border-amber-300/60 focus:ring-2 focus:ring-amber-300/20">
+              </label>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="block">
+                <span class="text-sm text-white/70">ইমেইল</span>
+                <input name="email" type="email" placeholder="আপনার ইমেইল" class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none focus:border-amber-300/60 focus:ring-2 focus:ring-amber-300/20">
+              </label>
+              <label class="block">
+                <span class="text-sm text-white/70">পছন্দের শো</span>
+                <select name="show" class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none focus:border-amber-300/60 focus:ring-2 focus:ring-amber-300/20">
+                  <option>মাতৃভাষার মঞ্চ</option>
+                  <option>নীরবতার শব্দ</option>
+                  <option>অন্তর্লোক</option>
+                </select>
+              </label>
+            </div>
+            <label class="block">
+              <span class="text-sm text-white/70">বার্তা</span>
+              <textarea name="message" rows="5" placeholder="আপনার প্রশ্ন বা বুকিং অনুরোধ লিখুন..." class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none focus:border-amber-300/60 focus:ring-2 focus:ring-amber-300/20"></textarea>
+            </label>
+            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-amber-300 px-5 py-3.5 font-semibold text-black hover:bg-amber-200 transition">
+              <i data-lucide="send" class="h-4 w-4"></i>
+              পাঠান
+            </button>
+            <p class="text-xs text-white/50">ফর্মটি সাবমিট করলে তথ্য সংরক্ষণ করা হবে এবং পরবর্তী ধাপে যোগাযোগের জন্য ব্যবহার করা হতে পারে।</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 py-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/55">
+      <div>© ২০২৬ রঙ্গমঞ্চ • বাংলা নাটকের আধুনিক প্রদর্শনী</div>
+      <div class="flex items-center gap-4">
+        <a href="#home" class="hover:text-white transition">উপরে যান</a>
+        <a href="#contact" class="hover:text-white transition">যোগাযোগ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    (function(){
+      const form = document.getElementById('leadForm');
+      const projectId = '4559727d-30a8-4ce6-9b01-57811ed675b3';
+      async function sendFormEvent(){
+        if(!form) return;
+        const data = new FormData(form);
+        const fields = {};
+        data.forEach((value, key) => { fields[key] = value; });
+        try{
+          await fetch('https://api.landing-page.io/api/mail-setting/form-events/' + projectId, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ project_id: projectId, fields })
+          });
+        }catch(e){}
+      }
+      if(form){
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          sendFormEvent();
+          form.reset();
+        });
+        const btn = form.querySelector('button[type="submit"]');
+        if(btn) btn.addEventListener('click', sendFormEvent);
+      }
+    })();
+  </script>
+<script>
+window.__AILP_FORM_CAPTURE__ = {
+  endpointBase: "https://api.landing-page.io/api/mail-setting/form-events",
+  projectId: "4559727d-30a8-4ce6-9b01-57811ed675b3",
+  conversationId: "conv_0939271fc1d746b7b023ac874a188876",
+  captureVersion: "2026-05-21-normalized-dedupe-v8"
+};
+</script>
+<script>
+(function () {
+  if (window.__AILP_FORM_CAPTURE_BOUND__) return;
+  window.__AILP_FORM_CAPTURE_BOUND__ = true;
+  var config = window.__AILP_FORM_CAPTURE__ || {};
+  var projectId = config.projectId || "";
+  var endpointBase = config.endpointBase || "https://api.landing-page.io/api/mail-setting/form-events";
+  var endpoint = endpointBase.replace(/\/$/, "") + "/" + encodeURIComponent(projectId || "unknown-project");
+  var lastReportedForm = null;
+  var lastReportedAt = 0;
+  var lastSubmitKey = "";
+  var formEventsDedupe = window.__AILP_FORM_EVENTS_DEDUPE__ || {};
+  window.__AILP_FORM_EVENTS_DEDUPE__ = formEventsDedupe;
+
+  function isFormEventsUrl(url) {
+    return String(url || "").indexOf("/api/mail-setting/form-events/") !== -1;
+  }
+
+  function requestBodyFromFetchArgs(args) {
+    if (args.length > 1 && args[1] && Object.prototype.hasOwnProperty.call(args[1], "body")) {
+      return args[1].body || "";
+    }
+    var input = args[0];
+    return input && input.body ? input.body : "";
+  }
+
+  function stableStringify(value) {
+    if (value === null || typeof value !== "object") return JSON.stringify(value);
+    if (Array.isArray(value)) {
+      return "[" + value.map(stableStringify).join(",") + "]";
+    }
+    return "{" + Object.keys(value).sort().map(function (key) {
+      return JSON.stringify(key) + ":" + stableStringify(value[key]);
+    }).join(",") + "}";
+  }
+
+  function normalizedFormEventsRequestKey(url, body) {
+    var raw = String(body || "");
+    try {
+      var parsed = JSON.parse(raw);
+      return [
+        String(url || ""),
+        String(parsed.project_id || projectId || ""),
+        stableStringify(parsed.fields || {})
+      ].join("|");
+    } catch (err) {
+      return String(url || "") + "|" + raw;
+    }
+  }
+
+  function isDuplicateFormEventsRequest(key) {
+    var now = Date.now();
+    var previous = formEventsDedupe[key] || 0;
+    formEventsDedupe[key] = now;
+    return previous && now - previous < 3000;
+  }
+
+  if (typeof fetch === "function" && !window.__AILP_FORM_EVENTS_FETCH_PATCHED__) {
+    window.__AILP_FORM_EVENTS_FETCH_PATCHED__ = true;
+    var nativeFetch = fetch.bind(window);
+    window.fetch = function () {
+      var args = Array.prototype.slice.call(arguments);
+      var input = args[0];
+      var url = typeof input === "string" ? input : (input && input.url) || "";
+      if (isFormEventsUrl(url)) {
+        var body = requestBodyFromFetchArgs(args);
+        var key = normalizedFormEventsRequestKey(url, body);
+        if (isDuplicateFormEventsRequest(key)) {
+          var responseBody = JSON.stringify({
+            code: 200,
+            message: "duplicate form event skipped",
+            data: { deduped: true }
+          });
+          if (typeof Response === "function") {
+            return Promise.resolve(new Response(responseBody, {
+              status: 200,
+              headers: { "Content-Type": "application/json" }
+            }));
+          }
+          return Promise.resolve({
+            ok: true,
+            status: 200,
+            text: function () { return Promise.resolve(responseBody); },
+            json: function () { return Promise.resolve(JSON.parse(responseBody)); }
+          });
+        }
+      }
+      return nativeFetch.apply(window, args);
+    };
+  }
+
+  function fieldForKey(form, key) {
+    if (!form || !form.elements) return null;
+    var field = form.elements[key];
+    if (!field) return null;
+    if (field.length && !field.type) return field[0] || null;
+    return field;
+  }
+
+  function put(data, key, value) {
+    if (Object.prototype.hasOwnProperty.call(data, key)) {
+      if (!Array.isArray(data[key])) data[key] = [data[key]];
+      data[key].push(value);
+    } else {
+      data[key] = value;
+    }
+  }
+
+  function collectFields(form) {
+    var data = {};
+    if (!form) return data;
+    var fd = new FormData(form);
+    fd.forEach(function (value, key) {
+      var field = fieldForKey(form, key);
+      var type = field ? String(field.type || "").toLowerCase() : "";
+      var lowerKey = String(key || "").toLowerCase();
+      if (type === "password" || lowerKey.indexOf("captcha") !== -1) {
+        put(data, key, "[redacted]");
+        return;
+      }
+      if (value instanceof File) {
+        put(data, key, value.name ? "[file:" + value.name + "]" : "");
+        return;
+      }
+      put(data, key, value);
+    });
+    return data;
+  }
+
+  function collectButtonContext(button) {
+    var data = {};
+    if (!button) return data;
+    var text = String(button.innerText || button.value || button.getAttribute("aria-label") || button.getAttribute("title") || "").trim();
+    if (text) data.button_text = text;
+    var href = button.getAttribute && button.getAttribute("href");
+    if (href) data.button_href = href;
+    var target = button.getAttribute && (button.getAttribute("data-target") || button.getAttribute("aria-controls"));
+    if (target) data.button_target = target;
+    return data;
+  }
+
+  function emitResult(status, detail) {
+    try {
+      window.dispatchEvent(new CustomEvent("ailp:form-capture", {
+        detail: Object.assign({ status: status }, detail || {})
+      }));
+    } catch (err) {}
+  }
+
+  function sendWithBeacon(body) {
+    if (!navigator.sendBeacon) return false;
+    return navigator.sendBeacon(endpoint, new Blob([body], { type: "application/json" }));
+  }
+
+  function send(payload) {
+    var body = JSON.stringify(payload);
+    if (typeof fetch !== "function") {
+      var queued = sendWithBeacon(body);
+      emitResult(queued ? "queued" : "failed", { payload: payload });
+      return;
+    }
+    fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: body
+    }).then(function (response) {
+      return response.text().then(function (text) {
+        var data = null;
+        if (text) {
+          try { data = JSON.parse(text); } catch (err) { data = text; }
+        }
+        emitResult(response.ok ? "success" : "error", {
+          ok: response.ok,
+          statusCode: response.status,
+          response: data,
+          payload: payload
+        });
+      });
+    }).catch(function (error) {
+      var queued = sendWithBeacon(body);
+      emitResult(queued ? "queued" : "failed", {
+        error: error ? String(error.message || error) : "",
+        payload: payload
+      });
+    });
+  }
+
+  function payloadKey(form, payload) {
+    var fields = payload && payload.fields ? payload.fields : {};
+    return [
+      payload.project_id || "",
+      form ? form.id || "" : "",
+      stableStringify(fields)
+    ].join("|");
+  }
+
+  function hasRealFormAction(form) {
+    if (!form) return false;
+    var raw = String(form.getAttribute("action") || "").trim();
+    if (!raw || raw === "#") return false;
+    try {
+      var actionUrl = new URL(raw, location.href);
+      return actionUrl.href !== location.href && actionUrl.hash !== "#";
+    } catch (err) {
+      return false;
+    }
+  }
+
+  function report(form, eventType, button) {
+    if (!form && !button) return;
+    var payload = {
+      project_id: config.projectId || "",
+      conversation_id: config.conversationId || "",
+      event_type: eventType || "form_submit",
+      page_url: location.href,
+      form_id: form ? form.id || "" : "",
+      form_name: form ? form.getAttribute("name") || "" : "",
+      button_text: button ? String(button.innerText || button.value || "").trim() : "",
+      fields: form ? collectFields(form) : collectButtonContext(button)
+    };
+    var key = payloadKey(form, payload);
+    if (key === lastSubmitKey && Date.now() - lastReportedAt < 3000) return;
+    lastSubmitKey = key;
+    lastReportedForm = form;
+    lastReportedAt = Date.now();
+    send(payload);
+  }
+
+  document.addEventListener("submit", function (e) {
+    if (!hasRealFormAction(e.target)) e.preventDefault();
+    if (e.target === lastReportedForm && Date.now() - lastReportedAt < 1500) return;
+    report(e.target, "form_submit", null);
+  }, true);
+
+  document.addEventListener("click", function (e) {
+    var target = e.target;
+    var button = target && target.closest ? target.closest('button, input[type="submit"], input[type="button"], [role="button"]') : null;
+    if (!button) return;
+    var form = button.form || (button.closest ? button.closest("form") : null);
+    if (form && !hasRealFormAction(form)) e.preventDefault();
+    report(form, "form_button_click", button);
+  }, true);
+})();
+</script>
+</body>
+</html>
